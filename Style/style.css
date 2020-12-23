@@ -144,7 +144,10 @@ header {
   flex-wrap: wrap;
 }
 .port-container {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
   border: 1px solid #eeeeee;
+  cursor: pointer;
   flex-basis: calc((100% / 3 - 30px) / 3);
 }
 .port-container:nth-child(-n + 6) {
@@ -198,10 +201,16 @@ header {
 /* hero */
 
 .hero-section {
-  background-color: var(--bcg-main-color);
   padding-top: 200px;
   padding-bottom: 200px;
+
+  margin: 0 auto;
+  max-width: 1600px;
+  background-image: url(..//photo/Img\ Overlay.png),
+    url(..//photo/background.png);
+  background-color: #c4c4c4;
 }
+
 .hero.container {
   display: flex;
   align-items: center;
@@ -342,6 +351,20 @@ header {
 }
 .wrk-container:last-child {
   margin-right: 0px;
+}
+/* clients */
+.clients-section {
+  padding-top: 94px;
+}
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-black-color);
+
+  padding-bottom: 50px;
 }
 /* footer */
 .logo.footer {
