@@ -86,6 +86,7 @@ header {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
+
 .contacts .header-mail {
   display: block;
   padding-bottom: 32px;
@@ -144,8 +145,6 @@ header {
   flex-wrap: wrap;
 }
 .port-container {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
   border: 1px solid #eeeeee;
   cursor: pointer;
   flex-basis: calc((100% / 3 - 30px) / 3);
@@ -158,6 +157,11 @@ header {
 }
 .port-container:nth-child(3n) {
   margin-right: 0px;
+}
+.port-box > :hover,
+.port-box > :focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .port-container .port-title {
   margin: 0px;
