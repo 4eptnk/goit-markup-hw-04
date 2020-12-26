@@ -11,6 +11,7 @@ html *,
   --second-logo-color: #000000;
   --main-black-color: #212121;
   --bcg-main-color: #2f303a;
+  --icon-color: #afb1b8;
 }
 ul {
   margin: 0px;
@@ -330,6 +331,7 @@ header {
 }
 
 /* our command */
+
 .our-command {
   background-color: #f5f4fa;
   padding-top: 94px;
@@ -382,9 +384,38 @@ header {
 .wrk-container:last-child {
   margin-right: 0px;
 }
-.worker-link {
+.icon-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }
+.icon-box :not(:last-child) {
+  margin-right: 22px;
+}
+.link-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: var(--main-title-color);
+  color: var(--icon-color);
+}
+.link-icon:focus,
+.link-icon:hover {
+  background-color: var(--main-logo-color);
+  color: var(--main-title-color);
+}
+.svg-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
 /* clients */
+
 .clients-section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -404,10 +435,11 @@ header {
   display: flex;
   justify-content: center;
 }
-.client-list {
+.client-link {
   width: 170px;
   height: 90px;
-  border: 1px solid #afb1b8;
+  border: 1px solid;
+  border-color: var(--icon-color);
   border-radius: 4px;
   display: flex;
   justify-content: center;
@@ -415,8 +447,19 @@ header {
 .client-list:nth-child(-n + 5) {
   margin-right: 30px;
 }
+.client-link:hover,
+.client-link:focus {
+  color: var(--main-logo-color);
+  border-color: var(--main-logo-color);
+}
 .client-link {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--icon-color);
+}
+.client-icon {
+  fill: currentColor;
 }
 /* footer */
 .logo.footer {
