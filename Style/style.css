@@ -285,10 +285,14 @@ header {
   padding: 0px;
 }
 .features-item {
+  width: 270;
   flex-basis: calc(100% / 4 - 23px);
 }
-.features-container :not(:last-child) {
+.features-item {
   margin-right: 30px;
+}
+.features-container :last-of-type {
+  margin-right: 0px;
 }
 .features-title {
   font-size: 14px;
@@ -297,6 +301,10 @@ header {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--main-black-color);
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-top: 30px;
 }
 .features-text {
   font-size: 14px;
@@ -304,8 +312,18 @@ header {
   font-weight: 400;
   line-height: 1.71;
   color: var(--main-text-color);
+  margin: 0px;
+  margin-top: 10px;
 }
-
+.features-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: #f5f4fa;
+}
+.svg-features {
+}
 /* about company */
 .about-company {
   padding-top: 94px;
@@ -461,7 +479,9 @@ header {
 .client-icon {
   fill: currentColor;
 }
+
 /* footer */
+
 .logo.footer {
   margin: 0px;
 }
@@ -469,7 +489,6 @@ header {
   display: flex;
   flex-direction: column;
 }
-
 .footer-section {
   background-color: var(--bcg-main-color);
   padding-bottom: 60px;
@@ -499,4 +518,41 @@ header {
 }
 .ftr-address {
   padding-top: 20px;
+}
+.footer-enjoy {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+  padding-bottom: 20px;
+  margin: 0px;
+}
+.svg-box {
+  display: inline-flex;
+  align-self: center;
+}
+.svg-box :not(:last-child) {
+  margin-right: 10px;
+}
+.footer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--main-title-color);
+}
+.footer-icon:hover,
+.footer-icon:focus {
+  background-color: var(--main-logo-color);
+}
+.svg-footer {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
