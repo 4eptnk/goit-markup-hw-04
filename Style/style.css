@@ -67,7 +67,8 @@ header {
   color: var(--main-black-color);
 }
 .header-link:hover,
-.header-link:active {
+.header-link:active,
+.header-link:focus {
   color: var(--main-logo-color);
 }
 .header-link.current {
@@ -159,8 +160,9 @@ header {
   border: 0;
   padding: 6px 22px 6px 22px;
 }
-.port-button :active,
-.port-button :hover {
+.port-button:active,
+.port-button:hover,
+.port-button:focus {
   background: var(--main-logo-color);
   color: var(--main-title-color);
   border-radius: 4px;
@@ -322,9 +324,9 @@ header {
   height: 120px;
   background-color: #f5f4fa;
 }
-.svg-features {
-}
+
 /* about company */
+
 .about-company {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -487,7 +489,6 @@ header {
 }
 .container.footer {
   display: flex;
-  flex-direction: column;
 }
 .footer-section {
   background-color: var(--bcg-main-color);
@@ -529,8 +530,13 @@ header {
   padding-bottom: 20px;
   margin: 0px;
 }
+.enjoy-box {
+  margin-top: 12px;
+  margin-left: 70px;
+}
+
 .svg-box {
-  display: inline-flex;
+  display: flex;
   align-self: center;
 }
 .svg-box :not(:last-child) {
