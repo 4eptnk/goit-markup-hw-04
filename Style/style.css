@@ -163,7 +163,7 @@ header {
   background: var(--main-logo-color);
   color: var(--main-title-color);
   border-radius: 4px;
-  border-color: var(--main-logo-color);
+  border: 0;
 }
 .port-box {
   padding: 0px;
