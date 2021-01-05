@@ -61,6 +61,7 @@ header {
   padding-bottom: 32px;
   padding-top: 32px;
   font-weight: 500;
+
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -80,8 +81,8 @@ header {
 }
 .contacts .header-tel {
   display: flex;
-  padding-bottom: 32px;
-  padding-top: 32px;
+  padding-bottom: 39.5px;
+  padding-top: 39.5px;
 
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -89,8 +90,8 @@ header {
 }
 .contacts .header-mail {
   display: flex;
-  padding-bottom: 32px;
-  padding-top: 32px;
+  padding-bottom: 39.5px;
+  padding-top: 39.5px;
   margin-left: 350px;
 
   line-height: 1.14;
